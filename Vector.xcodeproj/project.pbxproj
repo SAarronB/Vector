@@ -28,6 +28,7 @@
 		C6DC2B9A21FF663100D9B04C /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
 		C6DC2B9B21FF663100D9B04C /* Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
 		C6DC2B9D21FF664F00D9B04C /* Runner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
+		C6DC2BA021FF69BC00D9B04C /* Node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +45,7 @@
 		C6DC2B8521FF65BA00D9B04C = {
 			isa = PBXGroup;
 			children = (
+				C6DC2B9F21FF699E00D9B04C /* Model */,
 				C6DC2B9821FF65C400D9B04C /* Controller */,
 				C6DC2B8F21FF65BA00D9B04C /* Products */,
 			);
@@ -65,6 +67,14 @@
 				C6DC2B9D21FF664F00D9B04C /* Runner.cpp */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		C6DC2B9F21FF699E00D9B04C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C6DC2BA021FF69BC00D9B04C /* Node.h */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

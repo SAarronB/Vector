@@ -26,5 +26,16 @@ void Controller :: start(){
         firstVector[i] = i;
     }
     
+    cout<<"Greetings Hooman, your number is: "<<endl;
+    usingNodes();
     
 };
+
+void Controller :: usingNodes(){
+    Node<int>mine(5);
+    Node<string> wordHolder("These are words that are saved");
+    cout<<mine.getData()<<endl;
+    cout<<wordHolder.getData()<<endl;
+    wordHolder.setDat("The words have been replaced with these");
+    cout<<wordHolder.getData()<<endl;
+}

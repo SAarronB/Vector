@@ -16,6 +16,7 @@ class Node{
 private:
     Type data;
 public:
+    Node();
     Node(Type data);
     Type getData();
     void setDat(Type data);
@@ -25,17 +26,22 @@ public:
 //Template definitions
 
 template <class Type>
-Node :: Node(Type data){
+
+//default constructor<
+Node<Type> :: Node(){
+    
+}
+template <class Type>
+Node<Type> :: Node(Type data){
     this -> data = data;
 }
-
 template <class Type>
 Type Node<Type> :: getData() {
     return data;
 }
 
 template <class Type>
-void Node<Type> :: setData(Type data) {
+void Node<Type> :: setDat(Type data) {
     this -> data = data;
 }
 

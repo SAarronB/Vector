@@ -6,8 +6,8 @@
 //  Copyright © 2019 CTEC. All rights reserved.
 //
 
-#ifndef Node_h
-#define Node_h
+#ifndef Node_hpp
+#define Node_hpp
 
 #include <assert.h>
 
@@ -29,7 +29,7 @@ template <class Type>
 
 //default constructor<
 Node<Type> :: Node(){
-    
+    this -> data = data;
 }
 template <class Type>
 Node<Type> :: Node(Type data){

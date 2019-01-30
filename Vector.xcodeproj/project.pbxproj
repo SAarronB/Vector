@@ -24,6 +24,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C61B5E262201F8C9004D27FB /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
+		C61B5E2722020320004D27FB /* DiagramC++.uxf copy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = "DiagramC++.uxf copy"; path = "../../../Documents/UMlet/DiagramC++.uxf copy"; sourceTree = "<group>"; };
+		C61B5E2922020597004D27FB /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		C6DC2B8E21FF65BA00D9B04C /* Vector */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Vector; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6DC2B9A21FF663100D9B04C /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
 		C6DC2B9B21FF663100D9B04C /* Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
@@ -46,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				C6DC2BA021FF69BC00D9B04C /* Node.hpp */,
+				C61B5E262201F8C9004D27FB /* LinearNode.hpp */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
@@ -60,8 +64,17 @@
 		C61B5E252201F15E004D27FB /* Diagrams */ = {
 			isa = PBXGroup;
 			children = (
+				C61B5E2722020320004D27FB /* DiagramC++.uxf copy */,
 			);
 			path = Diagrams;
+			sourceTree = "<group>";
+		};
+		C61B5E282202057C004D27FB /* Structures */ = {
+			isa = PBXGroup;
+			children = (
+				C61B5E2922020597004D27FB /* Array.hpp */,
+			);
+			name = Structures;
 			sourceTree = "<group>";
 		};
 		C6DC2B8521FF65BA00D9B04C = {
@@ -95,6 +108,7 @@
 		C6DC2B9F21FF699E00D9B04C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C61B5E282202057C004D27FB /* Structures */,
 				C61B5E242201F14F004D27FB /* Linear */,
 				C61B5E232201F0C2004D27FB /* Nodes */,
 			);

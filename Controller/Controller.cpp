@@ -11,21 +11,37 @@
 using namespace std;
 
 void Controller :: start(){
-//-------------Making a Vector--------------------
-    size_t size = 10;
-    vector<int> firstVector(size); /*declares a vector
-    of integers and makes room for 10 integers*/
-//------------Making a Vector---------------------
+//-------------Making a Int Vector--------------------
+    size_t numSize = 6;
     
+    /*declares a vector
+     of integers and makes room for 10 integers*/
+    vector<int> firstVector = {1,2,3,4,5};
+//------------Making a Int Vector---------------------
+    
+    //-------------Making a Sting Vector--------------------
+    vector<string> secondVector = {"Hi","Hello","Hey"};
+//------------Making a String Vector---------------------
+    
+
+//-----------------Making Array----------------
+    //Initializing String Array
+    string copyStrings[4];
+    
+    // assign some values:
+    for (int i = 0; i < secondVector.size(); i++){
+        copyStrings[i] = secondVector.at(i)=i;
+    }
 //-----------------Making Array----------------
     
-//-----------------Making Array----------------
-    
-//--------------doing somthing with it-----------
-    for(int i=0; i<size; ++i){
-        firstVector[i] = i;
+//--------------Printing Vectors-----------
+    for(int num : firstVector){
+        cout << num << endl;
     }
     
+    for(int i = 0; i < secondVector.size(); i++){
+        cout << &secondVector << endl;
+    }
     cout<<"Greetings Hooman, your number is: "<<endl;
     usingNodes();
     

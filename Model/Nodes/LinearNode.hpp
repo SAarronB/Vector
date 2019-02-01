@@ -25,7 +25,9 @@ public:
 
 //Templates
 template <class Type>
-LinearNode<Type> :: LinearNode() : Node(){}
+LinearNode<Type> :: LinearNode() : Node(){
+    this -> next = nullptr;
+}
 
 template <class Type>
 LinearNode<Type> :: LinearNode(Type data) : Node<Type>(data) {

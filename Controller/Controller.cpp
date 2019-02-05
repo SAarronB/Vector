@@ -8,9 +8,11 @@
 
 #include "Controller.hpp"
 #include <vector>
+#include "../Data/CrimeData.hpp"
 using namespace std;
 
 void Controller :: start(){
+    
 //-------------Making a Int Vector--------------------
     size_t numSize = 6;
     
@@ -44,6 +46,12 @@ void Controller :: start(){
     }
     cout<<"Greetings Hooman, your number is: "<<endl;
     usingNodes();
+    
+//---------------Outputs IndexRows-----------
+    
+    
+    
+    cout << index << ": contents are: " << nameOfVector[index] << endl;
     
 };
 

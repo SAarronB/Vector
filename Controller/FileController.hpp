@@ -14,7 +14,10 @@
 #include <sstream>
 #include <string>
 #include <fstream>
+#include "../Data/Music.hpp"
 #include "../Data/CrimeData.hpp"
+
+using namespace std;
 
 class FileController{
   

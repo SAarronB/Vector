@@ -16,24 +16,25 @@ vector<CrimeData> FileController :: readCrimeDataToVector(string filename){
     
     ifstream dataFile(filename);
     
-//if the file exists at that path.
+    //if the file exists at that path.
     if(dataFile.is_open()){
-        //keep reading until you are at the end of the file.
-        while (!dataFile.eof()){
-            //grab each line from the CSV separated by the carriage return character.
-            getline(dataFile, currentCSVLine, "\n")
-            //Exclude header row
+        //Keep Reading Until you are at the end of the file
+        while(!dataFile.eof()){
+            //Grab each line from the VSV separated by the carriage return character.
+            getline(dataFile, currentCSVLine, '/r');
             if(rowCount != 0){
-                CrimeData row(currentCSVLine);
-                crimeVector.push_back(row);
+                //Create a CrimeData instace forom the line. exclude a black line (usually if opened separeately
+                if(currentCSVLine.length() != 0){
+                    CrimeData row(currentCSVLine);
+                    crimeVector.push_back(row);
+                }
             }
+            rowCount++;
         }
-        rowCount++;
+        dataFile.close();
+    }else{
+        cerr << "No File" << endl;
     }
-    dataFile.close();
-}
-else{
-    cout << "NO FILE" << endl;
-}
     return crimeVector;
 }
+

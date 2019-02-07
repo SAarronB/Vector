@@ -21,7 +21,7 @@ vector<CrimeData> FileController :: readCrimeDataToVector(string filename){
         //Keep Reading Until you are at the end of the file
         while(!dataFile.eof()){
             //Grab each line from the VSV separated by the carriage return character.
-            getline(dataFile, currentCSVLine, '/r');
+            getline(dataFile, currentCSVLine, '\r');
             if(rowCount != 0){
                 //Create a CrimeData instace forom the line. exclude a black line (usually if opened separeately
                 if(currentCSVLine.length() != 0){

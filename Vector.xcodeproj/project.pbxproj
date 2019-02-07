@@ -34,6 +34,7 @@
 		C60E2C4B220C763B007FF207 /* Music.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Music.cpp; sourceTree = "<group>"; };
 		C60E2C4C220C763B007FF207 /* CrimeData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CrimeData.hpp; sourceTree = "<group>"; };
 		C60E2C4D220C763B007FF207 /* Music.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Music.hpp; sourceTree = "<group>"; };
+		C60E2C50220C84EA007FF207 /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 		C61B5E262201F8C9004D27FB /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
 		C61B5E2722020320004D27FB /* DiagramC++.uxf copy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = "DiagramC++.uxf copy"; path = "../../../Documents/UMlet/DiagramC++.uxf copy"; sourceTree = "<group>"; };
 		C61B5E2922020597004D27FB /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
@@ -71,6 +72,8 @@
 		C61B5E242201F14F004D27FB /* Linear */ = {
 			isa = PBXGroup;
 			children = (
+				C61B5E2922020597004D27FB /* Array.hpp */,
+				C60E2C50220C84EA007FF207 /* List.hpp */,
 			);
 			path = Linear;
 			sourceTree = "<group>";
@@ -81,14 +84,6 @@
 				C61B5E2722020320004D27FB /* DiagramC++.uxf copy */,
 			);
 			path = Diagrams;
-			sourceTree = "<group>";
-		};
-		C61B5E282202057C004D27FB /* Structures */ = {
-			isa = PBXGroup;
-			children = (
-				C61B5E2922020597004D27FB /* Array.hpp */,
-			);
-			name = Structures;
 			sourceTree = "<group>";
 		};
 		C63251F02209DAEE00BED77F /* Tools */ = {
@@ -148,7 +143,6 @@
 		C6DC2B9F21FF699E00D9B04C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C61B5E282202057C004D27FB /* Structures */,
 				C61B5E242201F14F004D27FB /* Linear */,
 				C61B5E232201F0C2004D27FB /* Nodes */,
 			);

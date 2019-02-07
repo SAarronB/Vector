@@ -26,6 +26,4 @@ protected:
     virtual LinearNode<Type> * getFront() = 0;
     virtual LiearNode<Type> * getEnd() = 0;
 };
-};
-
 #endif /* List_h */

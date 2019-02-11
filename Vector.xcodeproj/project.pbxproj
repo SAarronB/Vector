@@ -35,14 +35,17 @@
 		C60E2C4C220C763B007FF207 /* CrimeData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CrimeData.hpp; sourceTree = "<group>"; };
 		C60E2C4D220C763B007FF207 /* Music.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Music.hpp; sourceTree = "<group>"; };
 		C60E2C50220C84EA007FF207 /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
-		C60E2C51220C9451007FF207 /* LinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
-		C61B5E262201F8C9004D27FB /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
+		C60E2C51220C9451007FF207 /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
+		C61B5E262201F8C9004D27FB /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		C61B5E2722020320004D27FB /* DiagramC++.uxf copy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = "DiagramC++.uxf copy"; path = "../../../Documents/UMlet/DiagramC++.uxf copy"; sourceTree = "<group>"; };
 		C61B5E2922020597004D27FB /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		C63251F12209DB1B00BED77F /* Timer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
 		C63251F22209DB1B00BED77F /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
 		C63251F42209E04000BED77F /* FileController.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FileController.cpp; sourceTree = "<group>"; };
 		C63251F52209E04000BED77F /* FileController.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FileController.hpp; sourceTree = "<group>"; };
+		C65D09272211D57A00B0284F /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
+		C65D09282211D58400B0284F /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
+		C65D09292211D59400B0284F /* CircularList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircularList.h; sourceTree = "<group>"; };
 		C6DC2B8E21FF65BA00D9B04C /* Vector */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Vector; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6DC2B9A21FF663100D9B04C /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
 		C6DC2B9B21FF663100D9B04C /* Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
@@ -66,7 +69,7 @@
 			children = (
 				C6DC2BA021FF69BC00D9B04C /* Node.hpp */,
 				C61B5E262201F8C9004D27FB /* LinearNode.hpp */,
-				C60E2C51220C9451007FF207 /* LinkedList.h */,
+				C60E2C51220C9451007FF207 /* LinkedList.hpp */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
@@ -76,6 +79,9 @@
 			children = (
 				C61B5E2922020597004D27FB /* Array.hpp */,
 				C60E2C50220C84EA007FF207 /* List.hpp */,
+				C65D09272211D57A00B0284F /* Stack.hpp */,
+				C65D09282211D58400B0284F /* Queue.hpp */,
+				C65D09292211D59400B0284F /* CircularList.h */,
 			);
 			path = Linear;
 			sourceTree = "<group>";

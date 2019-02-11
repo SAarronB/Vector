@@ -51,7 +51,7 @@ void Controller :: start(){
     
     
     
-    cout << index << ": contents are: " << nameOfVector[index] << endl;
+    //cout << index << ": contents are: " << nameOfVector[index] << endl;
     
 };
 

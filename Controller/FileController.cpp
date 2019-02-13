@@ -10,7 +10,7 @@
 using namespace std;
 
 vector<CrimeData> FileController :: readCrimeDataToVector(string filename){
-    vector<CrimeData> crimeVector;
+    vector<CrimeData> crimes;
     string currentCSVLine;
     int rowCount = 0;
     
@@ -26,7 +26,7 @@ vector<CrimeData> FileController :: readCrimeDataToVector(string filename){
                 //Create a CrimeData instace forom the line. exclude a black line (usually if opened separeately
                 if(currentCSVLine.length() != 0){
                     CrimeData row(currentCSVLine);
-                    crimeVector.push_back(row);
+                    crimes.push_back(row);
                 }
             }
             rowCount++;
@@ -35,6 +35,6 @@ vector<CrimeData> FileController :: readCrimeDataToVector(string filename){
     }else{
         cerr << "No File" << endl;
     }
-    return crimeVector;
+    return crimes;
 }
 

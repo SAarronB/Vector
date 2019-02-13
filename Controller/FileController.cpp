@@ -38,3 +38,26 @@ vector<CrimeData> FileController :: readCrimeDataToVector(string filename){
     return crimes;
 }
 
+LinkedList<Music> FileController :: musicDataToList(string fileName){
+    LinkedList<Music> musicList;
+    
+    string currentCSVLine;
+    int rowCount = 0;
+    ifstream dataFile(fileName);
+    //if the file exists at that path
+    if(dataFile.is_open()){
+        //keepreading until you are tat the end of the file
+        while(!dataFile.eof()){
+            getline(dataFile, currentCSVline, "\r");
+            if(currentCSVLine.length() !=0){
+                Music row(currentCSVLine);
+                musicList.add(row);
+            }
+        }
+        rowCount++
+    }
+    dataFile.close();
+}else{
+    cerr <<"No File"<< endl;
+}
+    return musicList;

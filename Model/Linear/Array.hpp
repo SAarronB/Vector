@@ -63,9 +63,9 @@ Array<Type> :: ~Array() {
 template <class Type>
 Array<Type> & Array<Type> :: operator = (const Array<Type> & toAssign) {
     if(&toAssign != this){
-        if(size != toAssing.getSize()){
+        if(size != toAssign.getSize()){
             delete [] internalArray;
-            size = toAssing.getSize();
+            size = toAssign.getSize();
             internalArray = new Type [size];
         }
         for(int index = 0;index < size; index++){
@@ -88,7 +88,7 @@ Type Array<Type> :: operator[] (int index) const {
 };
 
 template <class Type>
-int Array<Type> :; getSize() const{
+int Array<Type> :: getSize() const{
     return size;
 };
 
@@ -100,7 +100,7 @@ Type Array<Type> :: getFromIndex(int index){
 }
 
 template <class Type>
-void Array<Type> :; setAtIndex(int pos, Type item){
+void Array<Type> :: setAtIndex(int pos, Type item){
     asset(pos >= 0 && pos< size);
     internalArray[pos] = item;
 }

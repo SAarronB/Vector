@@ -6,7 +6,7 @@
 //  Copyright © 2019 CTEC. All rights reserved.
 //
 
-#include <Node.hpp>
+#include "Node.hpp"
 
 using namespace std;
 
@@ -51,7 +51,7 @@ void LinearNode<Type> :: setNext(LinearNode<Type> * next){
     this -> next = next;
 }
 
-template<class> Type>
+template<class Type>
 class LinearNode : public Node<Type>{
 protected:
     LinearNode<Type> * next;
@@ -67,8 +67,6 @@ public:
     void setNextNOde(LinearNode<Type> * next);
     LinearNode<Type> * getNextNode();
     
-    
-    
 };
     
     //Constructor
@@ -77,7 +75,7 @@ public:
         this->next = nullptr;
     }
     
-    template <class Type>LinearNode<Type> :: LinearNode(Type data) : Node<Type>(data){
+    template <class Type> LinearNode<Type> :: LinearNode(Type data) : Node<Type>(data){
         next->next = nullptr;
     }
     

@@ -10,6 +10,8 @@
 #define Controller_hpp
 
 #include <iostream>
+#include "../Model/Nodes/LinearNode.hpp"
+#include "../Tester/LinearTester.hpp"
 #include "../Model/Nodes/Node.hpp"
 #include "FileController.hpp"
 

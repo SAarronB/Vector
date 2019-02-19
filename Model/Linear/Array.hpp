@@ -29,7 +29,7 @@ public:
     Array<Type>(const Array<Type> & toCopy);
     ~Array<Type>();
     
-    Array<Type> & operator = (const Array<Type> & to Replace);
+    Array<Type> & operator = (const Array<Type> & toReplace);
     Type& operator [] (int index);
     Type operator [] (int index) const;
     

@@ -22,12 +22,7 @@ public:
     LinkedList();
     //Destructor
     virtual ~LinkedList(); //Virtual so it can be overridden
-    //Helper methods
-    int getSize() const;
-    LinearNode<Type> * getFront();
-    LinearNode<Type> * getEnd();
-    
-    //Structure Methods
+    //Helper Methods
     virtual void add(Type item);
     virtual void addAtIndex(int index, Type item);
     virtual Type getFromIndex(int index);

@@ -21,4 +21,21 @@ void LinearTester :: testVsSTL(){
     crimeTimerSTL.displayInformation();
     crimeTimerOOp.displayInformation();
     cout << "A difference of: " << crimeTimerOOP.getTimerInMicroseconds() << " micorseconds" << endl;
+    
+    musicSTL.startTimer();
+    vector<Music> tunes = FileController :: musicDataToVector("");
+    musicSTL.stopTimer();
+    
+    musicOOP.startTimer();
+    LinkedList<Music> musicList = FileController :: musicDataToList("");
+    musicOOP>stopTimer();
+    
+    musicSTL.displayInformation();
+    musicOOP.displayInformation();
+    cout << "A difference of: " << musicOOP.getTimerInMicroseconds() - musicSTL.getTimerInMicroseconds() << " microseconds" << endl;
+    
+    crimeTimerOOP.resetTimer();
+    crimeTimerSTL.resetTimer();
+    musicOOP.resetTimer();
+    musicSTL.resetTimer();
 }

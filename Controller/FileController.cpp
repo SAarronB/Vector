@@ -50,14 +50,14 @@ LinkedList<Music> FileController :: musicDataToList(string fileName){
         while(!dataFile.eof()){
             getline(dataFile, currentCSVline, "\r");
             if(currentCSVLine.length() !=0){
-                Music row(currentCSVLine);
-                musicList.add(row);
+                    Music row(currentCSVLine);
+                    musicList.add(row);
             }
+            rowCount++
         }
-        rowCount++
+        dataFile.close();
+    }else{
+        cerr <<"No File"<< endl;
     }
-    dataFile.close();
-}else{
-    cerr <<"No File"<< endl;
-}
-    return musicList;
+        return musicList;
+};

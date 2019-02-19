@@ -9,18 +9,18 @@
 #ifndef Node_hpp
 #define Node_hpp
 
+#include "../Nodes/Node.hpp"
 #include <assert.h>
 
 template <class Type>
 class Node{
-private:
+protected:
     Type data;
 public:
     Node();
     Node(Type data);
+    void setData(Type data);
     Type getData();
-    void setDat(Type data);
-    
 };
 
 //Template definitions
@@ -41,7 +41,7 @@ Type Node<Type> :: getData() {
 }
 
 template <class Type>
-void Node<Type> :: setDat(Type data) {
+void Node<Type> :: setData(Type data) {
     this -> data = data;
 }
 

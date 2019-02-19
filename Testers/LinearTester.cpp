@@ -12,27 +12,27 @@ void LinearTester :: testVsSTL(){
     Timer crimeTimerSTL, crimeTimerOOP, musicSTL, musicOOP;
     crimeTimerSTL.startTimer();
     vector<CrimeData> crimes = FileController :: readCrimeDataToVector("/Users/sbon9081/C++Projects/Vector/Data/crime.csv");
-    crimeTimeSTL.stopTimer();
+    crimeTimerSTL.stopTimer();
     
     crimeTimerOOP.startTimer();
     LinkedList<CrimeData> moreCrimes = FileController :: readCrimeDataToList("/Users/sbon9081/C++Projects/Vector/Data/crime.csv");
-    crimeTimeOOP.stopTimer();
+    crimeTimerOOP.stopTimer();
     
     crimeTimerSTL.displayInformation();
-    crimeTimerOOp.displayInformation();
-    cout << "A difference of: " << crimeTimerOOP.getTimerInMicroseconds() << " micorseconds" << endl;
+    crimeTimerOOP.displayInformation();
+    cout << "A difference of: " << crimeTimerOOP.getTimerInMicroSeconds() << " micorseconds" << endl;
     
     musicSTL.startTimer();
-    vector<Music> tunes = FileController :: musicDataToVector("");
+    vector<Music> tunes = FileController :: musicDataToVector("../Data/music.csv");
     musicSTL.stopTimer();
     
     musicOOP.startTimer();
-    LinkedList<Music> musicList = FileController :: musicDataToList("");
-    musicOOP>stopTimer();
+    LinkedList<Music> musicList = FileController :: musicDataToList("../Data/music.csv");
+    musicOOP.stopTimer();
     
     musicSTL.displayInformation();
     musicOOP.displayInformation();
-    cout << "A difference of: " << musicOOP.getTimerInMicroseconds() - musicSTL.getTimerInMicroseconds() << " microseconds" << endl;
+    cout << "A difference of: " << musicOOP.getTimerInMicroSeconds() - musicSTL.getTimerInMicroseconds() << " microseconds" << endl;
     
     crimeTimerOOP.resetTimer();
     crimeTimerSTL.resetTimer();

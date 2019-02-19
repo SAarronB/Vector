@@ -10,10 +10,6 @@
 #define Array_hpp
 
 #include <assert.h>
-
-
-
-
 #include "iostream"
 
 using namespace std;
@@ -40,7 +36,7 @@ public:
 
 template <class Type>
 Array<Type> :: Array (int size){
-    asset(size > 0);
+    assert(size > 0);
     this -> size = size;
     internalArray = new Type[size];
 };

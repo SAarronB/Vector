@@ -9,14 +9,14 @@
 #ifndef Queue_hpp
 #define Queue_hpp
 #include "LinkedList.hpp"
-#include <iosteam>
+#include <iostream>
 using namespace std;
 
 template <class Type>
 class Queue : public LinkedList<Type> {
 public:
-    Queue():
-    !Queue();
+    Queue();
+    ~Queue();
     //Queue methods
     void enqueue(Type data);
     Type dequeue();
@@ -28,14 +28,14 @@ public:
     void addAtIndex(int index, Type data);
     Type getFromIndex(int index);
     Type remove(int inde);
-    
+};
     template <class Type>
     Queue<Type> :: Queue() : LinkedList<Type>(){
         //Empty since it is handled by the parent class constructor
     }
     
     template<class Type>
-    Queue<Type :: ~Queue(){
+    Queue<Type> :: ~Queue(){
         for(LinearNode<Type> * remove = this->front; remove != nullptr; remove = this->front){
             this->front = remove->getNextNode();
             delete remove;
@@ -44,7 +44,7 @@ public:
     
     template <class Type>
     void Queue<Type> :: enqueue(Type item){
-        LinearNode<Type> * added = new LienarNode<Type>(item);
+        LinearNode<Type> * added = new LinearNode<Type>(item);
         if(this->size == 0){
             this->front = added;
         }else{
@@ -67,11 +67,11 @@ public:
     
     template <class Type>
     Type Queue<Type> :: dequeue(){
-        assert(this->size > 0;)
-        Type returned = this->fornt->getData();
+        assert(this->size > 0);
+        Type returned = this->front->getData();
         LinearNode<Type> * remove = this -> front;
-        this->front = removed->getNextNode();
-        delete removed;
+        this->front = remove->getNextNode();
+        delete remove;
         this->size = this->size - 1;
         return returned;
     }
@@ -92,7 +92,7 @@ public:
     template <class Type>
     Type Queue<Type> :: peek(){
         assert(this->size > 0);
-        return thsi->getFront()->getData();
+        return this->getFront()->getData();
     }
     
     template <class Type>
@@ -100,7 +100,6 @@ public:
         assert(index == 0);
         return peek();
     }
-    };
     
 
 

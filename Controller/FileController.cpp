@@ -38,9 +38,8 @@ vector<CrimeData> FileController :: readCrimeDataToVector(string filename){
     return crimes;
 }
 
-LinkedList<Music> FileController :: musicDataToList(string fileName){
-    LinkedList<Music> musicList;
-    
+vector<Music> FileController :: musicDataToVector(string fileName){
+    vector<Music> musicList;
     string currentCSVLine;
     int rowCount = 0;
     ifstream dataFile(fileName);
@@ -48,16 +47,18 @@ LinkedList<Music> FileController :: musicDataToList(string fileName){
     if(dataFile.is_open()){
         //keepreading until you are tat the end of the file
         while(!dataFile.eof()){
-            getline(dataFile, currentCSVline, "\r");
-            if(currentCSVLine.length() !=0){
+            getline(dataFile, currentCSVLine, '\r');
+            if(rowCount != 0){
+                if(currentCSVLine.length() !=0){
                     Music row(currentCSVLine);
-                    musicList.add(row);
+                    musicList.push_back(row);
+                }
             }
-            rowCount++
+            rowCount++;
         }
         dataFile.close();
     }else{
         cerr <<"No File"<< endl;
     }
         return musicList;
-};
+}

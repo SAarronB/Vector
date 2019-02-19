@@ -22,6 +22,7 @@ public:
     LinkedList();
     //Destructor
     virtual ~LinkedList(); //Virtual so it can be overridden
+    virtual int getSize() const;
     //Helper Methods
     virtual void add(Type item);
     virtual void addAtIndex(int index, Type item);
@@ -29,21 +30,25 @@ public:
     virtual Type remove(int index);
     //type setAtIndex(int index, Type item);
     //bool contains(Type item);
+};
+template <class Type>
     LinkedList<Type> :: LinkedList(){
         this->front = nullptr;
         this->end = nullptr;
         this->size = 0;
     }
+template <class Type>
     LinkedList<Type> :: ~LinkedList(){
         LinearNode<Type> * destroyStructure = front;
         while (front != nullptr) {
-            front = deestroyStructure -> getNextNode();
+            front = destroyStructure -> getNextNode();
             delete destroyStructure;
             destroyStructure = front;
         }
     }
+template <class Type>
     void LinkedList<Type> :: add(Type item){
-        LinearNode<Type> :: add(Type item);
+        LinearNode<Type> * newData = new LinearNode<Type>(item);
         if(this -> size == 0){
             this -> front = newData;
         }else{
@@ -52,7 +57,8 @@ public:
         this -> end = newData;
         this -> size += 1;
     }
-    
+
+template <class Type>
     void LinkedList<Type> :: addAtIndex(int index, Type item){
         assert(index >= 0 && index <= this -> size);
         if(index == this -> size){
@@ -75,7 +81,5 @@ public:
             this->size;
         }
     }
-    //ended off page 5 of Linked List Class docs
-};
 
 #endif /* LinkedList_h */

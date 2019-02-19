@@ -14,10 +14,11 @@
 #include <sstream>
 #include <string>
 #include <fstream>
-#include "../Model/Linear/Array.hpp"
+//#include "../Model/Linear/Array.hpp"
 #include "../Model/Linear/LinkedList.hpp"
-#include "../Data/Music.hpp"
 #include "../Data/CrimeData.hpp"
+#include "../Data/Music.hpp"
+
 
 using namespace std;
 
@@ -28,7 +29,7 @@ public:
     static LinkedList<CrimeData> readDataToList(string filename);
     static vector<Music> musicDataToVector(string filename);
     
-    static Array<Music> musicDataToArray(string filename);
+    //static array<Music> musicDataToArray(string filename);
     static LinkedList<Music> musicDataToList(string filename);
 };
 

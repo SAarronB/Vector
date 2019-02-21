@@ -16,12 +16,11 @@
 
 using namespace std;
 class Controller{
-public:
-    void usingNodes();
-    void start();
 private:
-    
-    
+    void usingNodes();
+    void testLinear();
+public:
+    void start();
 };
 
 #endif /* Controller_hpp */

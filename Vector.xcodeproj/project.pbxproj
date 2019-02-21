@@ -40,6 +40,7 @@
 		C61B5E262201F8C9004D27FB /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		C61B5E2722020320004D27FB /* DiagramC++.uxf copy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = "DiagramC++.uxf copy"; path = "../../../Documents/UMlet/DiagramC++.uxf copy"; sourceTree = "<group>"; };
 		C61B5E2922020597004D27FB /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
+		C625F580221EEFEC001C0A96 /* DoubleNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoubleNode.hpp; sourceTree = "<group>"; };
 		C63251F12209DB1B00BED77F /* Timer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
 		C63251F22209DB1B00BED77F /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
 		C63251F42209E04000BED77F /* FileController.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FileController.cpp; sourceTree = "<group>"; };
@@ -72,6 +73,7 @@
 			children = (
 				C6DC2BA021FF69BC00D9B04C /* Node.hpp */,
 				C61B5E262201F8C9004D27FB /* LinearNode.hpp */,
+				C625F580221EEFEC001C0A96 /* DoubleNode.hpp */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";

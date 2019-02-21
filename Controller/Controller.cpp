@@ -22,7 +22,7 @@ void Controller :: usingNodes(){
     cout << wordHolder.getData() << endl;
 }
 
-void Controller :: testLiner(){
+void Controller :: testLinear(){
     LinearTester lookieHere;
-    lookiHere.testVsSTL();
+    lookieHere.testVsSTL();
 }

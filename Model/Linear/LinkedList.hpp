@@ -22,14 +22,20 @@ public:
     LinkedList();
     //Destructor
     virtual ~LinkedList(); //Virtual so it can be overridden
-    virtual int getSize() const;
     //Helper Methods
+    virtual int getSize() const;
+    LinearNode<Type> * getFront();
+    LinearNode<Type> * getEnd();
+    
+    
+    
+    //Structure Methods
     virtual void add(Type item);
     virtual void addAtIndex(int index, Type item);
     virtual Type getFromIndex(int index);
     virtual Type remove(int index);
     //type setAtIndex(int index, Type item);
-    //bool contains(Type item);
+    bool contains(Type item);
 };
 template <class Type>
     LinkedList<Type> :: LinkedList(){
@@ -76,10 +82,69 @@ template <class Type>
                     current = current ->getNextNode();
                 }
                 previous->setNextNode(toBeAdded);
-                toBeAdded -> setNextNode(current);
+                toBeAdded->setNextNode(current);
             }
-            this->size;
+            this->size++;
         }
     }
+
+template <class type>
+type LinkedList<type> :: getFromIndex(int index) {
+    assert(index>=0 && index<this->size);
+    type data;
+    
+    LinearNode<type> * current = front;
+    for(int position =0; position < index; position++){
+        current = current->getNextNode();
+    }
+    
+    data = current->getData();
+    return data;
+};
+
+template <class type>
+type LinkedList<type> :: remove(int index) {
+    assert(index >= 0 && index < this->size);
+    LinearNode<type> * current = front;
+    LinearNode<type> * toBeRemoved = nullptr;
+    LinearNode<type> * previous = nullptr;
+    type removeData;
+    if(index == 0){
+        toBeRemoved = front;
+        this->front = this->front->getNextNode();
+    }else{
+        for(int postion = 0; postion < index; postion++){
+            previous = current;
+            current = current->getNextNode();
+        }
+        toBeRemoved = current;
+        if(index==this->size -1){
+            previous->setNextNode(nullptr);
+            end = previous;
+        }else{
+            current = toBeRemoved->getNextNode();
+            previous->setNextNode(current);
+        }
+    }
+    this->size -=1;
+    removeData = toBeRemoved->getData();
+    delete toBeRemoved;
+    return removeData;
+};
+
+template <class type>
+LinearNode<type> * LinkedList<type> :: getEnd(){
+    return this->end;
+}
+
+template <class type>
+LinearNode<type> * LinkedList<type> :: getFront(){
+    return this->front;
+}
+
+template <class type>
+int LinkedList<type> :: getSize() const{
+    return this->size;
+}
 
 #endif /* LinkedList_h */

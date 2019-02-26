@@ -25,7 +25,6 @@ public:
     void setNextNode(LinearNode<Type> * next);
     LinearNode<Type> * getNextNode();
     //Destructor
-    virtual ~LinearNode();
 };
 
 //Templates

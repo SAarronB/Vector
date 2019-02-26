@@ -8,6 +8,7 @@
 
 #include "LinearTester.hpp"
 
+
 void LinearTester :: testVsSTL(){
     Timer crimeTimerSTL, crimeTimerOOP, musicSTL, musicOOP;
     crimeTimerSTL.startTimer();
@@ -15,7 +16,7 @@ void LinearTester :: testVsSTL(){
     crimeTimerSTL.stopTimer();
     
     crimeTimerOOP.startTimer();
-    LinkedList<CrimeData> moreCrimes = FileController :: readCrimeDataToVector("/Users/sbon9081/C++Projects/Vector/Data/crime.csv");
+    LinkedList<CrimeData> moreCrimes = FileController :: readDataToList("../Data/crime.csv");
     crimeTimerOOP.stopTimer();
     
     crimeTimerSTL.displayInformation();

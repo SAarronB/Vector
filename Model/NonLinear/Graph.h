@@ -25,6 +25,14 @@ private:
     void depthFirstTraversal(Graph<Type> & graph, int vertex, bool markedVertices[]);
     
 public:
+    Graph();
+    //Graph operations
     
+    void addVertex(const Type& value);
+    
+    //Connect vertices
+    void addEdge(int sourve, int target);
+    void addEdgeUndirected(int source, int target;
+                           )
 };
 #endif /* Graph_h */

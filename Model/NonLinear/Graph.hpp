@@ -6,8 +6,8 @@
 //  Copyright © 2019 CTEC. All rights reserved.
 //
 
-#ifndef Graph_h
-#define Graph_h
+#ifndef Graph_hpp
+#define Graph_hpp
 
 #include <set>
 #include <queue>
@@ -140,6 +140,26 @@ template <class Type>
     
 //-------------------------------------TRAVERSALS-------------------------------------------
     
+    template <class Type>
+    void Graph<Type> :: depthFirstTraversal(Graph<Type> & currentGraph, int vertex){
+        bool visitedVertices[MAXIMUM];
+        assert(vertex < currentGraph.size(), false);
+        std::fill_n(visitedVeratices, currentGraph.size(), false);
+        depthFirstTraversal(currentGraph, vertex, visitedVertices);
+    };
+    
+    template <class Type>
+    void Graph<Type> :: depthFirstTraversal(Graph<Type> & currentGraph, int vertex, bool * visited){
+    std::set<int> connections = currentGraph.neightbors(vertex);
+    std::set<int>::iterator setIterator;
+    visited[vertex] = true;
+    cout << currentGraph[vertex] << ", " << endl;
+    for(setIteratro = connections.begin(); setIterator != connections.end(); setIterator++){
+        if(!visited[*setIterator]){
+            depthFirstTravelsal(currentGraph, *setIterator, visited);
+        }
+    }
+};
     
     
-#endif /* Graph_h */
+#endif /* Graph_hpp */

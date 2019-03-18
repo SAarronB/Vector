@@ -57,7 +57,7 @@
 		C6DC2B9B21FF663100D9B04C /* Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
 		C6DC2B9D21FF664F00D9B04C /* Runner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
 		C6DC2BA021FF69BC00D9B04C /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
-		C6F35BCB223FDCB600DB50C9 /* GraphTester.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphTester.h; sourceTree = "<group>"; };
+		C6F35BCB223FDCB600DB50C9 /* GraphTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GraphTester.hpp; sourceTree = "<group>"; };
 		C6F35BCC223FE3F900DB50C9 /* GraphTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GraphTester.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,7 +130,7 @@
 			children = (
 				C6581A5E22147F5200B7433F /* LinearTester.cpp */,
 				C6581A5F22147F5200B7433F /* LinearTester.hpp */,
-				C6F35BCB223FDCB600DB50C9 /* GraphTester.h */,
+				C6F35BCB223FDCB600DB50C9 /* GraphTester.hpp */,
 				C6F35BCC223FE3F900DB50C9 /* GraphTester.cpp */,
 			);
 			path = Testers;

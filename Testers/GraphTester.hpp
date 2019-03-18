@@ -6,8 +6,8 @@
 //  Copyright © 2019 CTEC. All rights reserved.
 //
 
-#ifndef GraphTester_h
-#define GraphTester_h
+#ifndef GraphTester_hpp
+#define GraphTester_hpp
 
 #include "../Model/NonLinear/Graph.hpp"
 #include <iostream>
@@ -21,4 +21,4 @@ private:
 public:
     void testerGraphs();
 };
-#endif /* GraphTester_h */
+#endif /* GraphTester_hpp*/

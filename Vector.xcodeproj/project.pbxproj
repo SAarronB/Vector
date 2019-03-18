@@ -14,6 +14,7 @@
 		C6581A6022147F5200B7433F /* LinearTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6581A5E22147F5200B7433F /* LinearTester.cpp */; };
 		C6DC2B9C21FF663100D9B04C /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6DC2B9A21FF663100D9B04C /* Controller.cpp */; };
 		C6DC2B9E21FF664F00D9B04C /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6DC2B9D21FF664F00D9B04C /* Runner.cpp */; };
+		C6F35BCD223FE3F900DB50C9 /* GraphTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6F35BCC223FE3F900DB50C9 /* GraphTester.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -57,6 +58,7 @@
 		C6DC2B9D21FF664F00D9B04C /* Runner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
 		C6DC2BA021FF69BC00D9B04C /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
 		C6F35BCB223FDCB600DB50C9 /* GraphTester.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphTester.h; sourceTree = "<group>"; };
+		C6F35BCC223FE3F900DB50C9 /* GraphTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GraphTester.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 				C6581A5E22147F5200B7433F /* LinearTester.cpp */,
 				C6581A5F22147F5200B7433F /* LinearTester.hpp */,
 				C6F35BCB223FDCB600DB50C9 /* GraphTester.h */,
+				C6F35BCC223FE3F900DB50C9 /* GraphTester.cpp */,
 			);
 			path = Testers;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C63251F32209DB1B00BED77F /* Timer.cpp in Sources */,
+				C6F35BCD223FE3F900DB50C9 /* GraphTester.cpp in Sources */,
 				C60E2C4E220C763B007FF207 /* CrimeData.cpp in Sources */,
 				C6DC2B9C21FF663100D9B04C /* Controller.cpp in Sources */,
 				C60E2C4F220C763B007FF207 /* Music.cpp in Sources */,

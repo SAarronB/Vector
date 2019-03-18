@@ -112,17 +112,17 @@ template <class Type>
 bool Graph<Type> :: hasUndirectedConnection(int source, int target)const {
     assert(source >= 0 && source < vertexCount && target >= 0 && target < vertexCount);
     bool isAnEdge = false;
-    isAnEdge = adjacencymatrix[source][target] || [adjacencyMatrix[target][source];
-    return isAnEngine;
+    isAnEdge = adjacencymatrix[source][target] || adjacencyMatrix[target][source];
+    return isAnEdge;
 };
     
 template <class Type>
     bool Graph<Type> :: areConnected(int source, int target) const{
-        assert(source >= 0 && source < vertexCount && target >= 0 && target < vertexCount);
-        bool isAnEdge = false;
-        isAnEdge = adjacencyMatrix[source][target];
-        return isAnEdge;
-    };
+    assert(source >= 0 && source < vertexCount && target >= 0 && target < vertexCount);
+    bool isAnEdge = false;
+    isAnEdge = adjacencyMatrix[source][target];
+    return isAnEdge;
+};
     
 template <class Type>
     std::set<int> Graph<Type> :: Neighbors(int vertex)const{
@@ -161,5 +161,27 @@ template <class Type>
     }
 };
     
-    
+    template<class Type>
+    void Graph<Type> :: breadthFirstTraversal(Graph<Type> & currentGraph, int vertex){
+        assert(vertex < currentGraph.size());
+        bool visited[MAXIMUM];
+        std::set<int> connections;
+        std::set<int>::iterator setIterator;
+        std::queue<int> vertexQueue;
+        std::fill_n(visited, currentGraph.size(), false);
+        visited[vertex] = true;
+        cout<<currentGraph[vertex]<<endl;
+        vertexQueue.push(vertex);
+        while (!vertexQueue.empty()){
+            connections = currentGraph.neightbors(vertexQueue.front());
+            vertexQueue.pop();
+            for(setItorator = connection.begin(); setItorator != connection.end(); setItorator++){
+                if(!visited[*setIterator]){
+                    visited[*setIterator] = true;
+                    cout<< currentGraph[*setIterator]<<endl;
+                    vertexQueue.push(*setIterator);
+                }
+            }
+        }
+    };
 #endif /* Graph_hpp */

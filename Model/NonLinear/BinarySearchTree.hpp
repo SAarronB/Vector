@@ -105,4 +105,19 @@ void BinarySearchTree<Type> :: remove(Type item) {
 
 }
 
+template <class Type>
+void BinarySearchTree<Type> :: insert(Type itemToInsert) {
+    BinaryTreeNode<Type> * insertMe = new BinaryTreeNode<Type>(itemToInsert);
+    BinaryTreeNode<Type> * previous = nullptr;
+    BinaryTreeNode<Type> * current = this->root;
+    
+    if(current == nullptr){
+        this->root = insertMe;
+    }else{
+        while(current != nullptr){
+            
+        }
+    }
+}
+
 #endif /* BinarySearchTree_h */

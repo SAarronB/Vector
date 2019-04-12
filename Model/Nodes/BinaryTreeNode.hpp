@@ -35,7 +35,45 @@ public:
 //CONSTRUCTOR
 template <class Type>
 BinaryTreeNode<Type> :: BinaryTreeNode() : Node<Type>(){
-    
+    root = nullprt;
+    left = nullprt;
+    right = nullprt;
 }
 
+template <class Type>
+BinaryTreeNode<Type> :: BinaryTreeNode(Type data) : Node<Type>(data) {
+    root = nullprt;
+    left = nullprt;
+    right = nullprt;
+};
+
+template <class Type>
+BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRootNode(){
+    return this->root;
+};
+
+template <class Type>
+BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRootNode(){
+    return this->left;
+};
+
+template <class Type>
+BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRootNode(){
+    return this->right;
+};
+
+template<class Type>
+void BinaryTreeNode<Type> :: setRootNode(BinaryTreeNode<Type> * newRoot){
+    root = newRoot;
+};
+
+template<class Type>
+void BinaryTreeNode<Type> :: setRootNode(BinaryTreeNode<Type> * left){
+    this->left = left;
+};
+
+template<class Type>
+BinaryTreeNode<Type> :: setRootNode(BinaryTreeNode<Type> * right){
+    this->right = right;
+};
 #endif /* BinaryTreeNode_h */

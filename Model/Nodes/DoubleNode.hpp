@@ -7,7 +7,7 @@
 //
 
 #include "Node.hpp"
-#ifndef DoubleNode_hp
+#ifndef DoubleNode_hpp
 #define DoubleNode_hpp
 
 template <class Type>

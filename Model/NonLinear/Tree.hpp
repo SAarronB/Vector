@@ -9,6 +9,7 @@
 
 #ifndef Tree_hpp
 #define Tree_hpp
+#include "BinaryTreeNode.hpp"
 
 template <class Type>
 class Tree {
@@ -25,7 +26,7 @@ public:
     virtual bool contains(Type data) = 0;
     virtual void remove(Type data) = 0;
     //TRAVERSALS
-    virtual void inOrderTraversal() = 0:
+    virtual void inOrderTraversal() = 0;
     virtual void preOrderTraversal() = 0;
     virtual void postOrderTraversal() = 0;
 };

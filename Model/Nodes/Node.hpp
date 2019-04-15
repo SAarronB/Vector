@@ -9,7 +9,6 @@
 #ifndef Node_hpp
 #define Node_hpp
 
-#include "../Nodes/Node.hpp"
 #include <assert.h>
 
 template <class Type>
@@ -26,14 +25,13 @@ public:
 //Template definitions
 
 template <class Type>
-
-//default constructor<
+//default constructor
 Node<Type> :: Node(){
-    this -> data = data;
 }
+
 template <class Type>
 Node<Type> :: Node(Type data){
-    this -> data = data;
+    this->data = data;
 }
 template <class Type>
 Type Node<Type> :: getData() {

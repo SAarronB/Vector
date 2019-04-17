@@ -19,8 +19,8 @@ public:
     //INFORMATIONAL METHODS
     virtual int getSize() = 0;
     virtual int getHeight() = 0;
-    virtual int isComplete() = 0;
-    virtual int isBalanced() = 0;
+    virtual bool isComplete() = 0;
+    virtual bool isBalanced() = 0;
     //DATA MEHTODS
     virtual void insert(Type data) = 0;
     virtual bool contains(Type data) = 0;

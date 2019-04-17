@@ -1,15 +1,6 @@
-//
-//  BinaryTreeTester.cpp
-//  Vector
-//
-//  Created by Bonilla, Sean on 4/12/19.
-//  Copyright © 2019 CTEC. All rights reserved.
-//
-
-#include <stdio.h>
 #include "BinaryTreeTester.hpp"
 
-void BinaryTreeTester::doTreeStuff(){
+void BinaryTreeTester :: doTreeStuff(){
     testTree.insert(7);
     testTree.insert(1);
     testTree.insert(24);
@@ -25,4 +16,7 @@ void BinaryTreeTester::doTreeStuff(){
     testTree.inOrderTraversal();
     testTree.preOrderTraversal();
     testTree.postOrderTraversal();
+    testTree.getHeight();
+    testTree.isBalanced();
+    testTree.isComplete();
 }

@@ -20,18 +20,23 @@ private:
     BinaryTreeNode<Type> * rightChild;
     BinaryTreeNode<Type> * Root;
 public:
+    
     //CONSTRUCTORS
     BinaryTreeNode();
     BinaryTreeNode(Type Data);
+    
     //GETTERS AND SETTERS
     BinaryTreeNode<Type> * getRootNode();
     void setRoot(BinaryTreeNode<Type> * root);
-    BinaryTreeNode<Type> * getLeftChild;
-    void setLeftChild(BinaryTreeNode<Type> *leftChild);
-    BinaryTreeNode<Type> * getRightChild;
+    
+    BinaryTreeNode<Type> * getLeftChild();
+    void setLeftChild(BinaryTreeNode<Type> * leftChild);
+    
+    BinaryTreeNode<Type> * getRightChild();
     void setRightChild(BinaryTreeNode<Type> * rightChild);
 };
 //CONSTRUCTOR
+
 template <class Type>
 BinaryTreeNode<Type> :: BinaryTreeNode() : Node<Type>(){
     Root = nullptr;
@@ -44,33 +49,39 @@ BinaryTreeNode<Type> :: BinaryTreeNode(Type data) : Node<Type>(data) {
     Root = nullptr;
     leftChild = nullptr;
     rightChild = nullptr;
-};
+}
 
-template <class Type>
-void BinaryTreeNode<Type> :: setLeftChild(BinaryTreeNode<Type> * left){
-    this->leftChild;
-};
-
-
-
-
-template <class Type>
-void BinaryTreeNode<Type> :: setRightChild(BinaryTreeNode<Type> * right){
-    this->rightChild;
-};
 
 template<class Type>
-void BinaryTreeNode<Type> :: setRootNode(BinaryTreeNode<Type> * newRoot){
+void BinaryTreeNode<Type> :: setRoot(BinaryTreeNode<Type> * newRoot){
     Root = newRoot;
-};
+}
 
 template<class Type>
-void BinaryTreeNode<Type> :: setRootNode(BinaryTreeNode<Type> * leftChild){
-    this->left = leftChild;
-};
+void BinaryTreeNode<Type> :: setLeftChild(BinaryTreeNode<Type> * leftChild){
+    this->leftChild = leftChild;
+}
 
 template<class Type>
-BinaryTreeNode<Type> :: setRootNode(BinaryTreeNode<Type> * rightChild){
-    this->right = rightChild;
-};
+void BinaryTreeNode<Type> :: setRightChild(BinaryTreeNode<Type> * rightChild){
+    this->rightChild = rightChild;
+}
+
+template <class Type>
+BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRootNode(){
+    return this->Root;
+}
+
+template <class Type>
+BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRightChild(){
+    return this->rightChild;
+}
+
+template <class Type>
+BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getLeftChild(){
+    return this->leftChild;
+}
+
+
+
 #endif /* BinaryTreeNode_h */

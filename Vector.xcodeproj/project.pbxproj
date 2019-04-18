@@ -65,6 +65,8 @@
 		C6DC2BA021FF69BC00D9B04C /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
 		C6F35BCB223FDCB600DB50C9 /* GraphTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GraphTester.hpp; sourceTree = "<group>"; };
 		C6F35BCC223FE3F900DB50C9 /* GraphTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GraphTester.cpp; sourceTree = "<group>"; };
+		C6FCD49D2268C63900429CFE /* HashNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HashNode.hpp; sourceTree = "<group>"; };
+		C6FCD49E2268C79000429CFE /* Hashtable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Hashtable.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,8 @@
 				C61B5E262201F8C9004D27FB /* LinearNode.hpp */,
 				C625F580221EEFEC001C0A96 /* DoubleNode.hpp */,
 				C6B612862260D99B00EE451A /* BinaryTreeNode.hpp */,
+				C6FCD49D2268C63900429CFE /* HashNode.hpp */,
+				C6FCD49E2268C79000429CFE /* Hashtable.hpp */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";

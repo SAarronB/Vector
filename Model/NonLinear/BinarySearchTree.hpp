@@ -242,7 +242,24 @@ void BinarySearchTree<Type> :: insert(Type item) {
 
 
 //---------------------CONTAINS METHODS----------------------+
-
+template <class Type>
+bool BinarySearchTree<Type> :: contains(Type itemToFind) {
+    BinaryTreeNode<Type> * current = this->root;
+    if(current == nullptr){
+        return false;
+    }else{
+        while(current != nullptr){
+            if(itemToFind == current->getData()){
+                return true;
+            }else if(itemToFind < current->getData()){
+                current = current->getLeftNode();
+            }else{
+                current = current->getRightNode();
+            }
+        }
+        return false;
+    }
+}
 //---------------------CONTAINS METHODS----------------------+
 
 

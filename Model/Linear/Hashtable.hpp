@@ -34,7 +34,7 @@ public:
     void insert(Type data);
     long getSize();
     
-    HashNode<Type> * get(lon index);
+    HashNode<Type> * get(long index);
     bool contains(HashNode<Type> * value);
 };
 

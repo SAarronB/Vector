@@ -36,6 +36,15 @@ public:
 };
 
 template <class Type>
+int AVL<Type> :: heightDifference(BinaryTreeNode<Type> * node) {
+    int balance;
+    int leftHeight = this->calculateHeight(node->getLeftChild());
+    int rightHeight = this->calculateHeight(node->getRightChild());
+    balance = leftHeight - rightHeight;
+    return balance;
+}
+
+template <class Type>
 AVLTree<Type> :: AVLTree() : BinarySearchTree<Type>() {
     this->root = nullptr;
 };
@@ -95,6 +104,53 @@ BinaryTreeNode<Type> * AVLTree<Type> :: insertNode(BinaryTreeNode<Type> * parent
 }
 
 template <class Type>
+BinaryTreeNode<Type> * AVLTree<Type> :: leftRotation(BinaryTreeNode<Type> * parent) {
+    BinaryTreeNode<Type> * changeNode;
+    changeNode = parent->getLeftChild();
+    
+    parent->setLeftChild(changedNode->getRightChild());
+    
+    changeNode->setRightChild(parent);
+    parent->setRootNode(changeNode);
+    
+    return changedNode;
+}
+
+template <class Type>
+BinaryTreeNode<Type> * AVLTree<Type> :: rightRotation(BinaryTreeNode<Type> * parent) {
+    BinaryTreeNode<Type> * changeNode;
+    changeNode = parent->getRightChild();
+    
+    parent->setRightChild(changedNode->getLeftChild());
+
+    changeNode->setLeftChild(parent);
+    parent->setRootNode(changeNode);
+    
+    return changedNode;
+}
+
+template <class Type>
+BinaryTreeNode<Type> * AVLTree<Type> :: rightLeftRotation(BinaryTreeNode<Type> * parent) {
+    BinaryTreeNode<Type> * changeNode;
+    changeNode = parent->getRightChild();
+    
+    parent->setRightChild(leftRotation(changedNode));
+    
+    return rightRotation(parent);
+}
+
+template <class Type>
+BinaryTreeNode<Type> * AVLTree<Type> :: leftRightRotation(BinaryTreeNode<Type> * parent) {
+    BinaryTreeNode<Type> * changeNode;
+    changeNode = parent->getLeftChild();
+    
+    parent->setLeftChild(rightRotation(changedNode));
+    
+    return rightRotation(parent);
+}
+
+
+template <class Type>
 void AVLTree :: insert(Type item) {
     insertNode(this->getRoot(), item);
 }
@@ -105,8 +161,8 @@ void AVLTree :: remove(Type item) {
 }
 
 template <class Type>
-BinaryTreeNode<Type> * AVLTree<Type> :: blanceSubTree(BinaryTreeNode<Type> * parent) {
-    int blanceFactor = heightDiffrence(parent);
+BinaryTreeNode<Type> * AVLTree<Type> :: balanceSubTree(BinaryTreeNode<Type> * parent) {
+    int balanceFactor = heightDifference(parent);
     if(balaceFactor > 1){
         if(){
             parent = leftRotation(parent);
@@ -114,7 +170,7 @@ BinaryTreeNode<Type> * AVLTree<Type> :: blanceSubTree(BinaryTreeNode<Type> * par
             parent = lefRightRotaion(parent);
         }
     }else if(balanceFactor < -1){
-        if()heightDiffrence(parent->getRightChild()) > 0){
+        if()heightDifference(parent->getRightChild()) > 0){
             parent = rightLeftRotaion(parent);
         }else{
             parent=rightRotation(parent);

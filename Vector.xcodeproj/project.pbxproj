@@ -47,6 +47,7 @@
 		C63251F22209DB1B00BED77F /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
 		C63251F42209E04000BED77F /* FileController.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FileController.cpp; sourceTree = "<group>"; };
 		C63251F52209E04000BED77F /* FileController.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FileController.hpp; sourceTree = "<group>"; };
+		C64651B422788C2300E185CE /* AVLTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AVLTree.hpp; sourceTree = "<group>"; };
 		C6581A5E22147F5200B7433F /* LinearTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinearTester.cpp; sourceTree = "<group>"; };
 		C6581A5F22147F5200B7433F /* LinearTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearTester.hpp; sourceTree = "<group>"; };
 		C65D09272211D57A00B0284F /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
@@ -155,6 +156,7 @@
 				C6B6128C2260E2D200EE451A /* Tree.hpp */,
 				C6B6128D2260E48600EE451A /* BinarySearchTree.hpp */,
 				C6A9FE932230315600BDF05E /* Graph.hpp */,
+				C64651B422788C2300E185CE /* AVLTree.hpp */,
 			);
 			path = NonLinear;
 			sourceTree = "<group>";

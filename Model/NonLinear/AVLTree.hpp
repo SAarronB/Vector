@@ -36,6 +36,11 @@ public:
 };
 
 template <class Type>
+AVLTree<Type> :: AVLTree() : BinarySearchTree<Type>() {
+    this->root = nullptr;
+};
+
+template <class Type>
 BinaryTreeNode<Type> * AVLTree<Type> :: removeNode(BinaryTreeNode<Type> * parent, Type inserted) {
     if(parent == nullptr){
         return parent;
@@ -75,7 +80,9 @@ template <class Type>
 BinaryTreeNode<Type> * AVLTree<Type> :: insertNode(BinaryTreeNode<Type> * parent, Type inserted) {
     if(parent == nullptr){
         parent = new BinaryTreeNode<Type>(inserted);
-        this->setRoot(parent);
+        if(this->getRoot() == nullptr){
+            this->setRoot(parent);
+        }
         return parent;
     }else if (inserted < parent->getNodeData()) {
         parent->setLeftChild(insertNode(parent->getLeftChild(), inserted));
@@ -95,6 +102,25 @@ void AVLTree :: insert(Type item) {
 template <class Type>
 void AVLTree :: remove(Type item) {
     removeNode(this->getRoot(), item);
+}
+
+template <class Type>
+BinaryTreeNode<Type> * AVLTree<Type> :: blanceSubTree(BinaryTreeNode<Type> * parent) {
+    int blanceFactor = heightDiffrence(parent);
+    if(balaceFactor > 1){
+        if(){
+            parent = leftRotation(parent);
+        }else{
+            parent = lefRightRotaion(parent);
+        }
+    }else if(balanceFactor < -1){
+        if()heightDiffrence(parent->getRightChild()) > 0){
+            parent = rightLeftRotaion(parent);
+        }else{
+            parent=rightRotation(parent);
+        }
+    }
+    return parent;
 }
 
 #endif /* Header_h */

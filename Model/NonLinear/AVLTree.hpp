@@ -18,8 +18,8 @@ class AVLTree : public BinarySearchTree<Type> {
 private:
     BinaryTreeNode<Type> * leftRotaion(BinaryTreeNode<Type> * parent);
     BinaryTreeNode<Type> * rightRotation(BinaryTreeNode<Type> * parent);
-    BinaryTreeNode<Type> * leftRotation(BinaryTreeNode<Type> * parent);
-    BinaryTreeNode<Type> * rightRotaion(BInaryTreeNode<Type> * parent);
+    BinaryTreeNode<Type> * leftRightRotation(BinaryTreeNode<Type> * parent);
+    BinaryTreeNode<Type> * rightLeftRotaion(BInaryTreeNode<Type> * parent);
     
     BinaryTreeNode<Type> * balanceSubTree (BinaryTreeNode<Type> * parent);
     
